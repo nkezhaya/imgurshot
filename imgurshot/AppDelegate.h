@@ -10,6 +10,9 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (nonatomic, strong) IBOutlet NSMenu *statusMenu;
+@property (nonatomic, strong) NSStatusItem *statusItem;
+@property (nonatomic, strong) NSPasteboard *pasteboard;
 
 @end
 

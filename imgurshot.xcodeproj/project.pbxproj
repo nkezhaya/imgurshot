@@ -9,21 +9,14 @@
 /* Begin PBXBuildFile section */
 		A68C10E519E489700060A8AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C10E419E489700060A8AB /* AppDelegate.m */; };
 		A68C10E719E489700060A8AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C10E619E489700060A8AB /* main.m */; };
-		A68C10EA19E489700060A8AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C10E919E489700060A8AB /* ViewController.m */; };
 		A68C10EC19E489700060A8AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68C10EB19E489700060A8AB /* Images.xcassets */; };
 		A68C10EF19E489700060A8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68C10ED19E489700060A8AB /* Main.storyboard */; };
-		A68C10FB19E489700060A8AB /* imgurshotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C10FA19E489700060A8AB /* imgurshotTests.m */; };
+		A68C110519E489860060A8AB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68C110419E489860060A8AB /* Carbon.framework */; };
+		A68C110E19E48AD00060A8AB /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C110919E48AD00060A8AB /* DDHotKeyCenter.m */; };
+		A68C110F19E48AD00060A8AB /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C110B19E48AD00060A8AB /* DDHotKeyTextField.m */; };
+		A68C111019E48AD00060A8AB /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C110D19E48AD00060A8AB /* DDHotKeyUtilities.m */; };
+		A68C111819E492280060A8AB /* MLIMGURUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C111719E492280060A8AB /* MLIMGURUploader.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A68C10F519E489700060A8AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A68C10D619E4896F0060A8AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A68C10DD19E489700060A8AB;
-			remoteInfo = imgurshot;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A68C10DE19E489700060A8AB /* imgurshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgurshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,13 +24,17 @@
 		A68C10E319E489700060A8AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A68C10E419E489700060A8AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A68C10E619E489700060A8AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A68C10E819E489700060A8AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A68C10E919E489700060A8AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A68C10EB19E489700060A8AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A68C10EE19E489700060A8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A68C10F419E489700060A8AB /* imgurshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imgurshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A68C10F919E489700060A8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A68C10FA19E489700060A8AB /* imgurshotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgurshotTests.m; sourceTree = "<group>"; };
+		A68C110419E489860060A8AB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A68C110819E48AD00060A8AB /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		A68C110919E48AD00060A8AB /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		A68C110A19E48AD00060A8AB /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyTextField.h; sourceTree = "<group>"; };
+		A68C110B19E48AD00060A8AB /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyTextField.m; sourceTree = "<group>"; };
+		A68C110C19E48AD00060A8AB /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyUtilities.h; sourceTree = "<group>"; };
+		A68C110D19E48AD00060A8AB /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyUtilities.m; sourceTree = "<group>"; };
+		A68C111619E492280060A8AB /* MLIMGURUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLIMGURUploader.h; sourceTree = "<group>"; };
+		A68C111719E492280060A8AB /* MLIMGURUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLIMGURUploader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,13 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A68C10F119E489700060A8AB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A68C110519E489860060A8AB /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +52,9 @@
 		A68C10D519E4896F0060A8AB = {
 			isa = PBXGroup;
 			children = (
+				A68C111119E48EDF0060A8AB /* Classes */,
 				A68C10E019E489700060A8AB /* imgurshot */,
-				A68C10F719E489700060A8AB /* imgurshotTests */,
+				A68C111219E48EF40060A8AB /* Frameworks */,
 				A68C10DF19E489700060A8AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				A68C10DE19E489700060A8AB /* imgurshot.app */,
-				A68C10F419E489700060A8AB /* imgurshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,10 +70,6 @@
 		A68C10E019E489700060A8AB /* imgurshot */ = {
 			isa = PBXGroup;
 			children = (
-				A68C10E319E489700060A8AB /* AppDelegate.h */,
-				A68C10E419E489700060A8AB /* AppDelegate.m */,
-				A68C10E819E489700060A8AB /* ViewController.h */,
-				A68C10E919E489700060A8AB /* ViewController.m */,
 				A68C10EB19E489700060A8AB /* Images.xcassets */,
 				A68C10ED19E489700060A8AB /* Main.storyboard */,
 				A68C10E119E489700060A8AB /* Supporting Files */,
@@ -99,21 +86,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A68C10F719E489700060A8AB /* imgurshotTests */ = {
+		A68C110719E48AC60060A8AB /* DDHotKey */ = {
 			isa = PBXGroup;
 			children = (
-				A68C10FA19E489700060A8AB /* imgurshotTests.m */,
-				A68C10F819E489700060A8AB /* Supporting Files */,
+				A68C110819E48AD00060A8AB /* DDHotKeyCenter.h */,
+				A68C110919E48AD00060A8AB /* DDHotKeyCenter.m */,
+				A68C110A19E48AD00060A8AB /* DDHotKeyTextField.h */,
+				A68C110B19E48AD00060A8AB /* DDHotKeyTextField.m */,
+				A68C110C19E48AD00060A8AB /* DDHotKeyUtilities.h */,
+				A68C110D19E48AD00060A8AB /* DDHotKeyUtilities.m */,
 			);
-			path = imgurshotTests;
+			name = DDHotKey;
 			sourceTree = "<group>";
 		};
-		A68C10F819E489700060A8AB /* Supporting Files */ = {
+		A68C111119E48EDF0060A8AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A68C10F919E489700060A8AB /* Info.plist */,
+				A68C110719E48AC60060A8AB /* DDHotKey */,
+				A68C111519E4921E0060A8AB /* MLIMGURUploader */,
+				A68C10E319E489700060A8AB /* AppDelegate.h */,
+				A68C10E419E489700060A8AB /* AppDelegate.m */,
 			);
-			name = "Supporting Files";
+			name = Classes;
+			path = imgurshot;
+			sourceTree = "<group>";
+		};
+		A68C111219E48EF40060A8AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A68C110419E489860060A8AB /* Carbon.framework */,
+			);
+			name = Frameworks;
+			path = imgurshot;
+			sourceTree = "<group>";
+		};
+		A68C111519E4921E0060A8AB /* MLIMGURUploader */ = {
+			isa = PBXGroup;
+			children = (
+				A68C111619E492280060A8AB /* MLIMGURUploader.h */,
+				A68C111719E492280060A8AB /* MLIMGURUploader.m */,
+			);
+			name = MLIMGURUploader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,24 +149,6 @@
 			productReference = A68C10DE19E489700060A8AB /* imgurshot.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A68C10F319E489700060A8AB /* imgurshotTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A68C110119E489700060A8AB /* Build configuration list for PBXNativeTarget "imgurshotTests" */;
-			buildPhases = (
-				A68C10F019E489700060A8AB /* Sources */,
-				A68C10F119E489700060A8AB /* Frameworks */,
-				A68C10F219E489700060A8AB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A68C10F619E489700060A8AB /* PBXTargetDependency */,
-			);
-			name = imgurshotTests;
-			productName = imgurshotTests;
-			productReference = A68C10F419E489700060A8AB /* imgurshotTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,10 +160,6 @@
 				TargetAttributes = {
 					A68C10DD19E489700060A8AB = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					A68C10F319E489700060A8AB = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = A68C10DD19E489700060A8AB;
 					};
 				};
 			};
@@ -186,7 +177,6 @@
 			projectRoot = "";
 			targets = (
 				A68C10DD19E489700060A8AB /* imgurshot */,
-				A68C10F319E489700060A8AB /* imgurshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,13 +191,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A68C10F219E489700060A8AB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,29 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68C10EA19E489700060A8AB /* ViewController.m in Sources */,
 				A68C10E719E489700060A8AB /* main.m in Sources */,
+				A68C110E19E48AD00060A8AB /* DDHotKeyCenter.m in Sources */,
+				A68C111019E48AD00060A8AB /* DDHotKeyUtilities.m in Sources */,
 				A68C10E519E489700060A8AB /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A68C10F019E489700060A8AB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A68C10FB19E489700060A8AB /* imgurshotTests.m in Sources */,
+				A68C110F19E48AD00060A8AB /* DDHotKeyTextField.m in Sources */,
+				A68C111819E492280060A8AB /* MLIMGURUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A68C10F619E489700060A8AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A68C10DD19E489700060A8AB /* imgurshot */;
-			targetProxy = A68C10F519E489700060A8AB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A68C10ED19E489700060A8AB /* Main.storyboard */ = {
@@ -349,42 +319,6 @@
 			};
 			name = Release;
 		};
-		A68C110219E489700060A8AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = imgurshotTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imgurshot.app/Contents/MacOS/imgurshot";
-			};
-			name = Debug;
-		};
-		A68C110319E489700060A8AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = imgurshotTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imgurshot.app/Contents/MacOS/imgurshot";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,14 +336,6 @@
 			buildConfigurations = (
 				A68C10FF19E489700060A8AB /* Debug */,
 				A68C110019E489700060A8AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		A68C110119E489700060A8AB /* Build configuration list for PBXNativeTarget "imgurshotTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A68C110219E489700060A8AB /* Debug */,
-				A68C110319E489700060A8AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

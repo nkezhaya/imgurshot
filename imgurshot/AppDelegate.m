@@ -15,11 +15,14 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.pasteboard = [NSPasteboard generalPasteboard];
+
+    NSImage *icon = [NSImage imageNamed:@"Icon"];
+    [icon setTemplate:YES];
     
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [self.statusItem setMenu:self.statusMenu];
     [self.statusItem setTitle:nil];
-    [self.statusItem setImage:[NSImage imageNamed:@"Icon"]];
+    [self.statusItem setImage:icon];
     [self.statusItem setHighlightMode:YES];
     
     // Command + Shift + 5
@@ -39,7 +42,7 @@
                      description:nil
                    imgurClientID:@"32ea9cecdcd5fda"
                  completionBlock:^(NSString *result) {
-                     [self writeToPasteBoard:result];
+                     [self writeToPasteBoard:[result stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"]];
                      [NSTask launchedTaskWithLaunchPath:@"/usr/bin/afplay" arguments:@[@"/System/Library/Sounds/Ping.aiff"]];
                  }
                     failureBlock:nil];

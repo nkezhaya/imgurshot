@@ -15,4 +15,3 @@
 @property (nonatomic, strong) NSPasteboard *pasteboard;
 
 @end
-

@@ -11,6 +11,11 @@
 #import "DDHotKeyCenter.h"
 #import "MLIMGURUploader.h"
 
+#define MODE_KEY @"MODE"
+
+#define MODE_CLIPBOARD_ONLY 0
+#define MODE_UPLOAD_IMGUR 1
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -28,6 +33,7 @@
     [self.statusItem setImage:icon];
     [self.statusItem setHighlightMode:YES];
 
+    [self setMenuState];
 
     // Command + Shift + 5
     DDHotKeyCenter *center = [DDHotKeyCenter sharedHotKeyCenter];
@@ -77,14 +83,31 @@
 
 - (IBAction)copyToClipboardSelected:(id)sender
 {
-    [[self.statusMenu itemWithTag:2] setState:1];
-    [[self.statusMenu itemWithTag:3] setState:0];
+    [[NSUserDefaults standardUserDefaults] setInteger:MODE_CLIPBOARD_ONLY forKey:MODE_KEY];
+    [self setMenuState];
 }
 
 - (IBAction)uploadToImgurSelected:(id)sender
 {
-    [[self.statusMenu itemWithTag:2] setState:0];
-    [[self.statusMenu itemWithTag:3] setState:1];
+    [[NSUserDefaults standardUserDefaults] setInteger:MODE_UPLOAD_IMGUR forKey:MODE_KEY];
+    [self setMenuState];
+}
+
+- (void)setMenuState {
+    NSInteger mode = [[NSUserDefaults standardUserDefaults] integerForKey:MODE_KEY];
+
+    switch (mode) {
+        case MODE_CLIPBOARD_ONLY:
+            [[self.statusMenu itemWithTag:2] setState:1];
+            [[self.statusMenu itemWithTag:3] setState:0];
+            break;
+        case MODE_UPLOAD_IMGUR:
+            [[self.statusMenu itemWithTag:2] setState:0];
+            [[self.statusMenu itemWithTag:3] setState:1];
+            break;
+        default:
+            break;
+    }
 }
 
 - (BOOL)shouldUpload

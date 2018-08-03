@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="qaq-R5-VL3">
+            <objects>
+                <application id="OJt-Wo-N0r" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="lbK-Ft-yhm">
+                        <items>
+                            <menuItem title="imgurshot" id="4pt-0B-J1s">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="imgurshot" systemMenu="apple" id="bnm-XL-uOI">
+                                    <items>
+                                        <menuItem title="About imgurshot" id="Iij-XM-c0x">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="D9L-Uo-Wx1"/>
+                                        <menuItem title="Mode" enabled="NO" id="KVz-MO-mVV">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Copy Image to Clipboard" tag="3" indentationLevel="1" id="SW3-S1-T3q">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setModeCopyToClipboard:" target="cED-DQ-coc" id="Icw-eN-7I1"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Upload to imgur" state="on" tag="4" indentationLevel="1" id="axf-4K-sdi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setModeUploadToImgur:" target="cED-DQ-coc" id="Lcg-Kj-7LN"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="mNw-z2-w87"/>
+                                        <menuItem title="Copy zero-width space" tag="3" indentationLevel="1" id="F8s-bo-CWX">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="copyZeroWidthSpace:" target="cED-DQ-coc" id="1u5-WR-4vK"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy low-width space" tag="3" indentationLevel="1" id="Xla-Ri-ec0">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="copyLowWidthSpace:" target="cED-DQ-coc" id="6Z9-DL-KCZ"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="killall Dock" tag="3" indentationLevel="1" id="hUh-4R-r4y">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="killallDock:" target="cED-DQ-coc" id="k3a-8q-tam"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="u4j-ma-CkI"/>
+                                        <menuItem title="Quit imgurshot" keyEquivalent="q" id="pTx-Ei-bHf">
+                                            <connections>
+                                                <action selector="terminate:" target="TqO-Bk-USq" id="VvL-3q-fMN"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="cED-DQ-coc" id="ONT-oR-TFL"/>
+                    </connections>
+                </application>
+                <customObject id="TqO-Bk-USq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="cED-DQ-coc" customClass="AppDelegate" customModule="imgurshot" customModuleProvider="target">
+                    <connections>
+                        <outlet property="statusMenu" destination="bnm-XL-uOI" id="dzl-OJ-87V"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
